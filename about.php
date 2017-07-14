@@ -1,22 +1,31 @@
-
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Рустам</title>
 	<style type="text/css">
-		
+		body {
+        	font-family: sans-serif;  
+        }
+            
+        dl {
+        	display: table-row;
+        }
+            
+        dt, dd {
+        	display: table-cell;
+            padding: 5px 10px;
+        }        
 	</style>
 </head>
 <body>
+
 	<?php
 	$userName = 'Рустам';
 	$age = '24';
 	$email = 'r-guseynov@gmail.com';
 	$city = 'Санкт-Петербург';
 	$about = 'Тренер по армспорту';
-	echo $userName;
 	?>
 
 	<h1>Страница пользователя Рустам</h1>	
@@ -30,9 +39,7 @@
 	</dl>
 	<dl>
 		<dt>Адрес электронной почты</dt>
-		<dd>
-			<a href="mailto:r-guseynov@gmail.com"></a><?= $email ?>
-		</dd>
+		<dd><a href="mailto:r-guseynov@gmail.com"><?= $email ?></a></dd>
 	</dl>
 	<dl>
 		<dt>Город</dt>
